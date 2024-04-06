@@ -1,0 +1,102 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, #ccc,grey);
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header, main, footer {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid white;
+}
+
+tr.selected:active {
+  background-color: white; 
+}
+
+tr.selected:hover {
+  background-color: grey; 
+}
+
+
+th {
+  background-color: white;
+}
+
+
+
+.table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+@media screen and (max-width: 600px) {
+  .table-container {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.5em; 
+  }
+
+  table th, table td {
+    padding: 6px;
+  }
+}
+.selected {
+  background-color: white;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.options input {
+  padding: 8px;
+  border: 1px solid white;
+}
+
+.statistics {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .options {
+    flex-direction: column;
+  }
+  .options input {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
